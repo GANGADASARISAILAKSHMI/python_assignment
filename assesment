@@ -1,0 +1,42 @@
+s=input("String1=")
+uniqueLetters=set()
+for i in s:
+    if i not in uniqueLetters:
+        uniqueLetters.add(i)
+    c=','.join(uniqueLetters)
+print("uniqueLetters=",c)
+
+
+-------------alternate-----------
+String1=input("String1=")
+uniqueLetters=set(String1)
+print("uniqueLetters=",end='')
+for i in uniqueLetters:
+    print(i,sep=',',end='')
+
+
+-------------alternate-----------
+s=input("String1:")
+l1=[]
+for x in s:
+    if x not in l1:
+        l1.append(x)
+    uniqueLetters=''.join(l1)
+for i in uniqueLetters:
+    print(i,sep=',',end='')
+
+
+
+2)
+Book_Introduction_to_Python_Programming=499.00
+Book_Python_Libraries_Cookbook=855.00
+Book_Data_Science_in_Python=645.00
+taxes=0.12
+Delivery_Charges=250.00
+t1=Book_Introduction_to_Python_Programming+Book_Python_Libraries_Cookbook+Book_Data_Science_in_Python
+Amount=t1*taxes
+total_price=t1+Amount+Delivery_Charges
+print("total invoice amount: Rs {:.2f}".format(total_price))
+
+
+
